@@ -12,10 +12,16 @@ const seedDB = async () => {
 		department: "model"
 
 	});
-	const dummyEmployee2 = await Employee.create({
+	const dummyEmployee3 = await Employee.create({
 		firstname: "Jason",
 		lastname: "Comisi",
 		department: "Student"
+	});
+
+	const dummyEmployee4 = await Employee.create({
+		firstname: "Dan",
+		lastname: "Elkik",
+		department: "TA"
 	});
 
 	const dummyTask = await Task.create({
@@ -28,6 +34,12 @@ const seedDB = async () => {
 		priority: "Medium",
 		completion_status: "not complete"
 	});
+	const dummyTask2 = await Task.create({
+		description: "Homework",
+		priority: "Low",
+		completion_status: "not complete"
+	});
+
 
 	await dummyTask.setEmployee(dummyEmployee);
 
