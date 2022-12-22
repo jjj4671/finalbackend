@@ -1,4 +1,4 @@
-const dbName = 'testDB1';
+const dbName = 'testDB';
 const dbUser = 'postgres';
 const dbPwd = 'password1';
 
